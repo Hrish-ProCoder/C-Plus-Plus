@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main() {
+   cout<<"Size of int is "<<sizeof(int)<<" bytes"<<endl;
+   cout<<"Size of float is "<<sizeof(float)<<" bytes"<<endl;
+   cout<<"Size of double is "<<sizeof(double)<<" bytes"<<endl;
+   cout<<"Size of char is "<<sizeof(char)<<" byte"<<endl;
+   return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double m, n, pro;
+    cout << "Enter two numbers: ";
+
+    // Stores two floating point numbers in variable firstNumber and secondNumber respectively
+    cin >> m >> n;
+ 
+    // Performs multiplication and stores the result in variable productOfTwoNumbers
+    pro = m * n;  
+
+    cout << "Product = " << pro;    
+    
+    return 0;
+}
