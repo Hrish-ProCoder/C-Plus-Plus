@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+char city1[15],city2[15];
+    float tem[2][7];
+void getData()
+  {
+    cout<<"ENTER THE FIRST CITY : ";
+    cin>>city1;
+    cout<<"\nENTER THE SECOND CITY : ";
+    cin>>city2;
+      for(int i=0;i<2;i++)
+        {
+            cout<<"\nENTER THE TEMPERATURE FOR ";
+      if(i == 0)
+        cout<<city1<<"\n";
+      else
+        cout<<city2<<"\n";
+      for(int j=0; j<7; j++)
+        {
+            cout<<"DAY "<<j+1<<": ";
+            cin>>tem[i][j];
+        }
+        }
+  }
+
+  void displayData()
+  {
+      cout<<"\nDAY\t"<<city1<<"\t"<<city2<<"\n";
+      int i=0;
+      for(int j=0;j<7;j++)
+        {
+            cout<<j+1<<"\t"<<tem[i][j]<<"\t"<<tem[i+1][j]<<"\n";
+        }
+  }
+
+int main()
+{
+    getData();
+    displayData();
+}
