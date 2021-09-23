@@ -1,3 +1,4 @@
+# Min Max program from given list of numbers
 #include <iostream>
 using namespace std;
 void findMinAndMax(int arr[], int low, int high, int &min, int &max)
