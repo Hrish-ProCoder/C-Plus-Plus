@@ -43,3 +43,17 @@ void findMinAndMax(int arr[], int low, int high, int &min, int &max)
     findMinAndMax(arr, low, mid, min, max);
 
     findMinAndMax(arr, mid + 1, high, min, max);}
+
+int main()
+{
+    int arr[] = { 9, 6, 3, 8, 5, 2, 4, 7, 1 };
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    int max = INT_MIN, min = INT_MAX;
+
+    findMinAndMax(arr, 0, n - 1, min, max);
+
+    cout << "The minimum array element is " << min << endl;
+    cout << "The maximum array element is " << max;
+    return 0;
+}
