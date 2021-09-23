@@ -40,4 +40,6 @@ void findMinAndMax(int arr[], int low, int high, int &min, int &max)
         return;}
     int mid = (low + high) / 2;
 
-    
+    findMinAndMax(arr, low, mid, min, max);
+
+    findMinAndMax(arr, mid + 1, high, min, max);}
